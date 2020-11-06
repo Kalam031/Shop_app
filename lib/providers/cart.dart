@@ -26,11 +26,11 @@ class Cart with ChangeNotifier {
       // change quantity
       _items.update(
         productId,
-        (existingCardItem) => CartItem(
-          id: existingCardItem.id,
-          title: existingCardItem.title,
-          price: existingCardItem.price,
-          quantity: existingCardItem.quantity + 1,
+        (existingCartItem) => CartItem(
+          id: existingCartItem.id,
+          title: existingCartItem.title,
+          price: existingCartItem.price,
+          quantity: existingCartItem.quantity + 1,
         ),
       );
     } else {
